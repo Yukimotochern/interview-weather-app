@@ -34,7 +34,7 @@ export const getLocationAction = createAsyncThunk(
   async ({ city, country }: locationQuery, thunkApi) => {
     const { rejectWithValue, dispatch } = thunkApi
     const { data: location } = await axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city},,${country}&limit=1&appid=${process.env.REACT_APP_OPEN_WEATHER_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city},,${country}&limit=1&appid=${process.env.REACT_APP_OPEN_WEATHER_KEY}`
     )
     if (localValidator(location)) {
       if (location.length === 0) {
