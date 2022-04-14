@@ -1,0 +1,14 @@
+:global(.ant-descriptions).weather-des td:global(.ant-descriptions-item) {
+  padding: 0;
+  padding-bottom: 1px;
+}
+
+.result :global(.ant-result-title) {
+  transform: translate(0, -37.5px);
+}
+.result :global(.ant-result-icon) {
+  transform: translate(0, -20px);
+}
+.result {
+  height: 155.71px;
+}

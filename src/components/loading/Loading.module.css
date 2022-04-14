@@ -1,0 +1,11 @@
+.spin {
+  height: 100%;
+  width: 100%;
+}
+
+.spin :global(.ant-spin) {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
